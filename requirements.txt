@@ -1,0 +1,10 @@
+streamlit
+langchain
+chromadb
+langchain-groq
+pypdf
+huggingface-hub
+sentence-transformers
+bs4
+faiss-cpu
+pickle
