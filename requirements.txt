@@ -1,5 +1,6 @@
 streamlit
 langchain
+langchain-community
 chromadb
 langchain-groq
 pypdf
@@ -9,3 +10,8 @@ bs4
 faiss-cpu
 pickle
 unstructured
+gTTS
+tempfile
+pygame
+uuid
+
