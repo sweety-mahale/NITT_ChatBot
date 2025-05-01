@@ -8,3 +8,4 @@ sentence-transformers
 bs4
 faiss-cpu
 pickle
+unstructured
