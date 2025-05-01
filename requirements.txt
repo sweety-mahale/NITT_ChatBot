@@ -8,7 +8,7 @@ huggingface-hub
 sentence-transformers
 bs4
 faiss-cpu
-whisper
+openai-whisper
 streamlit_mic_recorder
 unstructured
 gTTS
