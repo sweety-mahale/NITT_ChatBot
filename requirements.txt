@@ -12,7 +12,6 @@ whisper
 streamlit_mic_recorder
 unstructured
 gTTS
-tempfile
 pygame
 uuid
 
