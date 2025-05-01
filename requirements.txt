@@ -13,5 +13,6 @@ streamlit_mic_recorder
 unstructured
 gTTS
 pygame
+torch
 uuid
 
