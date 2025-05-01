@@ -8,7 +8,8 @@ huggingface-hub
 sentence-transformers
 bs4
 faiss-cpu
-pickle
+whisper
+streamlit_mic_recorder
 unstructured
 gTTS
 tempfile
