@@ -30,6 +30,7 @@ from gtts import gTTS
 import tempfile
 import pygame
 import uuid
+import whisper
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 vector_db = FAISS.load_local("faiss_index1", embeddings,allow_dangerous_deserialization=True)
@@ -123,7 +124,6 @@ def chatbot_response(user_query):
         return f"❌ Error: {str(e)}"
 
 
-import whisper
 model = whisper.load_model("base")  # or "tiny", "small", etc.
 
 def transcribe_audio_local(audio_dict):
