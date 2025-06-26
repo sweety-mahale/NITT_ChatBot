@@ -35,7 +35,10 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain_core.messages import SystemMessage
 
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-mpnet-base-v2",
+    model_kwargs={"device": "cpu"}
+)
 vector_db = FAISS.load_local("faiss_index1", embeddings,allow_dangerous_deserialization=True)
 
 retriever = vector_db.as_retriever(
@@ -47,7 +50,7 @@ llm = ChatGroq(model="meta-llama/llama-4-maverick-17b-128e-instruct",temperature
 
 
 # ───── Semantic NIT Website Search ──────────
-embedder = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+embedder = SentenceTransformer("sentence-transformers/all-mpnet-base-v2", device="cpu")
 
 def search_college_website_semantic(query):
     base_url = "https://www.nitt.edu"
