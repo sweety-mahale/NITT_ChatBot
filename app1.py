@@ -41,7 +41,7 @@ vector_db = FAISS.load_local("faiss_index1", embeddings,allow_dangerous_deserial
 retriever = vector_db.as_retriever(
     search_type="similarity", search_kwargs={"k": 4}
 )
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 os.environ["TAVILY_API_KEY"] = "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"
 llm = ChatGroq(model="meta-llama/llama-4-maverick-17b-128e-instruct",temperature=0.2, max_tokens=700, streaming=True)
 
