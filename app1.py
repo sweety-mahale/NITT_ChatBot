@@ -166,7 +166,7 @@ def chatbot_response(user_query):
 
 
 import whisper
-model = whisper.load_model("base")  # or "tiny", "small", etc.
+model = whisper.load_model("base", device="cpu")  # or "tiny", "small", etc.
 
 def transcribe_audio_local(audio_dict):
     audio_data = audio_dict.get("bytes") if isinstance(audio_dict, dict) else audio_dict
